@@ -1,6 +1,8 @@
 # VBI-Compare
 Compare Volunteered Bathymetric Information (VBI) to authoritative data for reputation calculations.
 
+The user manual for VBI Compare is located [HERE](scripts/gui/Manual)
+
 **Note:** CSB Python, the necessary files for the Calder Reputation Alorgithm, are not currently publicly available,
 so the functionality of VBI Compare to execute a reputation calculation is not currently available.
 
