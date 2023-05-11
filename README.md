@@ -8,12 +8,12 @@ so the functionality of VBI Compare to execute a reputation calculation is not c
 
 ## Installation
 ### Download Basemap
-Create a folder in scripts\gui called "BaseMap."
+Create a folder in VBI-Compare\scripts\gui called "BaseMap."
 
 > Navigate to [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/) and download
 > "Natural Earth 1 with Shaded Relief, Water, and Drainages."
 
-Extract the downloaded files to the previously created BaseMap folder.
+Extract all the downloaded files to the previously created BaseMap folder.
 
 ### Install OSGeo4W
 Install OSGeo4W using stand alone installer Long Term Release 3.28.
@@ -27,7 +27,7 @@ Install Minicond3 Windows 64-bit for Python version 3.9.
 
 ### Environment Setup
 * Open a command prompt
-* Enter the following code ensuring the <VBI-Compare location> is updated.
+* Enter the following code ensuring the `<VBI-Compare location>` is updated.
 ```
   cd C:\<VBI-Compare location>\VBI-Compare
 ```
@@ -42,8 +42,8 @@ Install Minicond3 Windows 64-bit for Python version 3.9.
 
 ## Usage
 ### Starting VBI Compare
-Navigate to and run gui/cmd.qgis.cmd
-In the resulting command prompt run the following line ensuring the <VBI-Compare location> is updated.
+Navigate to and run `VBI-Compare\scripts\gui\cmd.qgis.cmd`
+In the resulting command prompt run the following line ensuring the `<VBI-Compare location>` is updated.
 ```
 cd C:\<VBI-Compare location>\VBI-Compare
 ```
