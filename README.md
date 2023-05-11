@@ -29,15 +29,15 @@ Install Minicond3 Windows 64-bit for Python version 3.9.
 * Open a command prompt
 * Enter the following code ensuring the `<VBI-Compare location>` is updated.
 ```
-  cd C:\<VBI-Compare location>\VBI-Compare
+ cd C:\<VBI-Compare location>\VBI-Compare
 ```
 * Run the following code in the command prompt.
 ```
-  call scripts\install\activate_env.bat
+call scripts\install\activate_env.bat
 ```
 * Activate the conda environment by running this line in the command prompt.
 ```
-  Run pip install .
+pip install .
 ```
 
 ## Usage
@@ -49,8 +49,10 @@ cd C:\<VBI-Compare location>\VBI-Compare
 ```
 Then run the following:
 ```
+python -m pip install boto3
 python scripts\gui\VBICompare_Main_GUI.py
 ```
+> Note: `boto3` is a Python library used to interact with AWS services like S3
 
 **File Descriptions**
 ### VBICompare_Main_GUI
