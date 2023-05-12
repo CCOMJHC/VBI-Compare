@@ -3,6 +3,10 @@ Compare Volunteered Bathymetric Information (VBI) to authoritative data for repu
 
 The user manual for VBI Compare is located [HERE](scripts/gui/Manual)
 
+**Note:** These installation steps are required for this stand alone version of VBI-Compare. If VBI-Compare is added to 
+hydrographic tool suites such as [Pydro](https://nauticalcharts.noaa.gov/data/tools-apps.html) or [Hydroffice](https://www.hydroffice.org/), 
+these requirements would no longer be required.
+
 **Note:** CSB Python, the necessary files for the Calder Reputation Alorgithm, are not currently publicly available,
 so the functionality of VBI Compare to execute a reputation calculation is not currently available.
 
@@ -15,30 +19,18 @@ Create a folder in VBI-Compare\scripts\gui called "BaseMap."
 
 Extract all the downloaded files to the previously created BaseMap folder.
 
-### Install OSGeo4W
-Install OSGeo4W using stand alone installer Long Term Release 3.28.
+### Install QGIS Using the OSGeo4W Installer
+Install QGIS LTR (version 3.28) using the installer.
 > See the [OSGeo4W Installers](https://qgis.org/en/site/forusers/alldownloads.html#osgeo4w-installer) page for 
 > installer download links and steps.
 
-### Install Miniconda3
-Install Minicond3 Windows 64-bit for Python version 3.9.
-> See the [Miniconda Installers](https://docs.conda.io/en/latest/miniconda.html#windows-installers) page for 
-> installer download links and steps.
+Use the Advanced Install method
 
-### Environment Setup
-* Open a command prompt
-* Enter the following code ensuring the `<VBI-Compare location>` is updated.
-```
- cd C:\<VBI-Compare location>\VBI-Compare
-```
-* Run the following code in the command prompt.
-```
-call scripts\install\activate_env.bat
-```
-* Activate the conda environment by running this line in the command prompt.
-```
-pip install .
-```
+On the "Select Packages" window, expand Desktop and select qgis-ltr 3.28.x.
+
+Click "Next"
+
+When warned of unmet dependencies, for QGIS, make sure to enable `Install these packages to meet dependencies (RECOMMENDED).`
 
 ## Usage
 ### Starting VBI Compare
@@ -73,3 +65,27 @@ Provides status updates to the monitoring window.
   
 ### Batch_Builder
 Builds and conditionally executes a batch file which operates the CSB python scripts for the Calder Reputation Alorithm.
+
+## Using with CSB Python
+
+When CSB-Python is released, these additional steps will be required in order to use it in combination with VBI-Compare
+
+### Install Miniconda3
+Install Minicond3 Windows 64-bit for Python version 3.9.
+> See the [Miniconda Installers](https://docs.conda.io/en/latest/miniconda.html#windows-installers) page for 
+> installer download links and steps.
+
+### Environment Setup
+* Open a command prompt
+* Enter the following code ensuring the `<VBI-Compare location>` is updated.
+```
+ cd C:\<VBI-Compare location>\VBI-Compare
+```
+* Run the following code in the command prompt.
+```
+call scripts\install\activate_env.bat
+```
+* Activate the conda environment by running this line in the command prompt.
+```
+pip install .
+```
