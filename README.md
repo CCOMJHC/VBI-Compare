@@ -1,9 +1,11 @@
 # VBI-Compare
 Compare Volunteered Bathymetric Information (VBI) to authoritative data for reputation calculations.
 
+VBI Compare was created by the Center for Coastal and Ocean Mapping (CCOM) to compare Volunteered Bathymetric Information (VBI) to collocated authoritative data for reputation calculations. Currently, it is functional for US waters only using the [National Bathymetric Source (NBS)](https://www.nauticalcharts.noaa.gov/data/bluetopo.html) as its authoritative data source. The goal of this program is to quickly collect VBI and NBS data to determine the quality of the VBI source and data. Based on user inputs, the program collects the desired data for comparison from the Amazon Web Service S3 bucket holdings of the NBS and the Crowd Sourced Bathymetry holdings of the [Data Centre for Digital Bathymetry (DCDB)](https://www.ngdc.noaa.gov/iho/). Data is then optionally donwloaded or URLs to the data in the cloud are collected. A batch file is created to initiate the reputation calculation. The batch file can be run immediately or stored for later and processed via a command prompt.
+
 The user manual for VBI Compare is located [HERE](scripts/gui/Manual)
 
-**Note:** These installation steps are required for this stand alone version of VBI-Compare. If VBI-Compare is added to 
+**Note:** These installation steps are required for this stand alone version of VBI-Compare. Once VBI-Compare is added to 
 hydrographic tool suites such as [Pydro](https://nauticalcharts.noaa.gov/data/tools-apps.html) or [Hydroffice](https://www.hydroffice.org/), 
 these requirements would no longer be required.
 
@@ -15,7 +17,7 @@ so the functionality of VBI Compare to execute a reputation calculation is not c
 Create a folder in VBI-Compare\scripts\gui called "BaseMap."
 
 > Navigate to [Natural Earth Data](https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/) and download
-> "Natural Earth 1 with Shaded Relief, Water, and Drainages."
+> "Natural Earth 1 with Shaded Relief, Water, and Drainages: large size"
 
 Extract all the downloaded files to the previously created BaseMap folder.
 
@@ -37,7 +39,7 @@ When warned of unmet dependencies, for QGIS, make sure to enable `Install these 
 Navigate to and run `VBI-Compare\scripts\gui\cmd.qgis.cmd`
 In the resulting command prompt run the following line ensuring the `<VBI-Compare location>` is updated.
 ```
-cd C:\<VBI-Compare location>\VBI-Compare
+cd ..\..\
 ```
 Then run the following:
 ```
