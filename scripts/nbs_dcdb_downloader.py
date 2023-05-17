@@ -220,6 +220,7 @@ class DataDownload:
         # Creates a file path in the designated place .../dcdb/ship name. Also creates an archive in the ship folder.
         elif self.data_source == "dcdb":
             for ship in self.platform:
+                ship = ship.rstrip()
                 ship = ship.replace('/', '')
                 directory = f"{self.data_storage}/{self.data_source}/{ship}"
                 pth = Path(directory)
