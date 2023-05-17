@@ -28,7 +28,9 @@ Install QGIS LTR (version 3.28) using the installer.
 
 Use the Advanced Install method
 
-On the "Select Packages" window, expand Desktop and select qgis-ltr 3.28.x.
+On the "Select Packages" window,
+* expand Desktop and select qgis-ltr 3.28.x.
+* expand Libs and select python3-pip.
 
 Click "Next"
 
