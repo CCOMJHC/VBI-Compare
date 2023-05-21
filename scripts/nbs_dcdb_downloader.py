@@ -782,7 +782,7 @@ class DataDownload:
         for platform in self.platform:
             ship = platform.replace(' ', '+')
             url = 'https://gis.ngdc.noaa.gov/arcgis/rest/services/csb/MapServer/1/query?' \
-                  'where=UPPER%28PLATFORM%29%3D%27' + ship + '%27&text=&objectIds=&time=&geometry=&' \
+                  'where=PLATFORM%3D%27' + ship + '%27&text=&objectIds=&time=&geometry=&' \
                   'geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&distance=&' \
                   'units=esriSRUnit_Foot&relationParam=&outFields' \
                   '=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=4326' \
